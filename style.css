@@ -1,0 +1,30 @@
+*{
+    /* m0+p0+ff */
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+/* 導覽列 */
+nav{
+    /* dg 格線*/
+    display: grid;
+    /* gtc 劃分導覽列 */
+    grid-template-columns: 20% 70% 10%;
+    /* bg */
+    background: #eeeeee;
+    /* bs 製造陰影 縮短 陰影面積 背景面積 陰影顏色  */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    /* 用於格線項目位置 */
+    align-items: center;
+}
+
+#logo img{
+    width: 50px;
+}
+
+#link a{
+    padding: 0 35px;
+    /* 文字裝置 */
+    text-decoration: none;
+}
