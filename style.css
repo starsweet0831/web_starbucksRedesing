@@ -36,7 +36,7 @@ nav{
 #link a:hover{
     color: #226641;
 }
-
+/* 商品介紹 */
 #products {
     width: 1280px;
     margin: 0 auto;
@@ -44,7 +44,7 @@ nav{
 
 #products > div {
     display: grid;
-    grid-template-columns:50% 40%;
+    grid-template-columns:60% 40%;
 }
 
 #products .pic img{
@@ -53,31 +53,71 @@ nav{
     object-fit: cover;
 }
 
-products.text{
+#products .text{
     padding:  150px 20px 0 0;
 }
 
 #products .text h1{
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 #products .text p{
     width: 300px;
-    line-height: 2;
+    line-height: 3;
 }
-/* 選取做更改的位子 odd基數 even.偶數 */
+/* 選取要變更的指令 odd基數 even.偶數 */
 #products > div:nth-child(2){
+    /* 優先順序 */
     grid-template-areas: "pic text";
+    /*  */
     grid-template-columns:50% 40%;
 
 }
-
+/* 賦予格線指令 */
 #products > div:nth-child(2) .text{
     grid-area: text;
 
 }
-
+/* 賦予格線指令 */
 #products > div:nth-child(2) .pic{
     grid-area: pic;
 
+}
+/* 按鈕設定 */
+.button{
+    padding: 8px 25px;
+    /* 邊框 */
+    border: 1px solid #226641;
+    text-decoration: none;
+    color: #226641;
+    transition:  0.5s;
+}
+
+.button:hover {
+    background: #226641;
+    color: #fff;
+}
+
+/* 門市資訊 */
+/* rep */
+#info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    width: 1280px;
+    margin: 20px auto 0;
+}
+
+#info .pic img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+#info .text h1{
+    padding: 30px 0;
+}
+
+#info .text p{
+    padding: 20px 0;
 }
