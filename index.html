@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>星巴克 | Starbucks</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
                 <p>令人驚豔的精選咖啡風味與各式手調飲品，期待你親自來探索與享受。</p>
                 <a href="" class="button">MORE</a>
             </div>
-            <div class="pic">
+            <div class="pic" data-aos="fade-left" >
                 <img src="./img/product_1.jpg" alt="">
             </div>
         </div>
@@ -66,24 +67,24 @@
     <!-- 門市資訊 -->
     <section id="info">
         <div>
-            <div class="pic">
+            <div class="pic" >
                 <img src="./img/info_1.jpg" alt="">
             </div>
             <div class="text">
-                <h1>y最新活動</h1>
+                <h1>最新活動</h1>
                 <hr>
-                <p></p>
+                <p>邀請你一起加入我們，創造最美好的星巴克體驗。</p>
                 <a href="" class="button">MORE</a>
             </div>
         </div>
         <div>
-            <div class="pic">
+            <div class="pic" data-aos="fade-down-left" data-aos-delay="100">
                 <img src="./img/info_2.jpg" alt="">
             </div>
             <div class="text">
                 <h1>門市查詢</h1>
                 <hr>
-                <p></p>
+                <p>查詢鄰近門市，讓我們的夥伴給你美好的一天。</p>
                 <a href="" class="button">MORE</a>
             </div>
         </div>
@@ -94,7 +95,7 @@
             <div class="text">
                 <h1>特色店家</h1>
                 <hr>
-                <p></p>
+                <p>從都市到鄉鎮，我們期待透過更多特色門市，用一杯咖啡的時間，與你分享更多故事</p>
                 <a href="" class="button">MORE</a>
             </div>
         </div>
@@ -103,6 +104,19 @@
     <!-- 其他服務 -->
 
     <!-- 頁尾 -->
+    <footer>
+        <div id="footer-social">
+            <a href=""targry="_blank"><img src="./img/icon-fb.png" alt="facebook 臉書"></a>
+            <a href=""targry="_blank"><img src="./img/icon-ig.png" alt="instagram ig"></a>
+        </div>
+        <div>&copy; Starbucks 2021.</div>
+        <div><a href="">網站地圖</a></div>
+
+    </footer>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -102,22 +102,38 @@ nav{
 /* rep */
 #info{
     display: grid;
+   /* repeat(數量，寬度) */
+    /* fr 格子 */
+    /* 格子 / 數量 */
+    /* 1fr / 3 */
     grid-template-columns: repeat(3, 1fr);
-    
+    /* 使用 repeat 可以用 間隙 */
+    grid-gap: 15px;
     width: 1280px;
-    margin: 20px auto 0;
+    margin: 50px auto 0;
 }
 
 #info .pic img{
     width: 100%;
-    height: 350px;
+    height: 600px;
     object-fit: cover;
 }
 
+#info .text{
+    padding: 0 10px;
+}
 #info .text h1{
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 #info .text p{
-    padding: 20px 0;
+    padding: 10px 0 25px;
+    line-height: 2;
+}
+
+/* 頁尾 */
+footer{
+    background-color: #adcfbd;
+    
+
 }
