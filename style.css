@@ -17,6 +17,11 @@ nav{
     padding: 20px 30px;
     /* 用於格線項目位置 */
     align-items: center;
+    /* 固定導覽列 */
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    opacity: 0.9;
 }
 
 #logo img{
@@ -68,7 +73,7 @@ nav{
 #banner h1{
     padding: 30px;
     margin-top: 200px;
-    font-size: 120px;
+    font-size: 60px;
     text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -105,7 +110,7 @@ nav{
 
 #products > div {
     display: grid;
-    grid-template-columns:60% 40%;
+    grid-template-columns:40% 60%;
     margin-top: 20px;
 }
 
@@ -116,11 +121,11 @@ nav{
 }
 
 #products .text{
-    padding:  80px 30px 0 0;
+    padding:  80px 30px 0 ;
 }
 
 #products .text h1{
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 #products .text p{
@@ -133,7 +138,7 @@ nav{
     /* 優先順序 */
     grid-template-areas: "pic text";
     /*  */
-    grid-template-columns:50% 40%;
+    grid-template-columns:40% 60%;
 
 }
 /* 賦予格線指令 */
@@ -192,6 +197,42 @@ nav{
 #info .text p{
     padding: 10px 0 25px;
     line-height: 2;
+}
+
+/* 其他服務 */
+
+#service { 
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* 聚焦:選取此元素時 */
+#service div:focus {
+    /* 選取邊框:無 */
+    outline: none;
+}
+
+#service img {
+    width: 300px;
+    height: 300px;
+    /* 寬高一定要相同才能設定 變成圓形 */
+    border-radius: 50%;
+    /* 讓圖片滿版 */
+    object-fit: cover;
+    /* 顯示模式:區塊 */
+    display: block;
+    margin: 0 auto;
+    transform: 0.5s;
+}
+
+#service img:hover{
+    border-radius: 5px;
+}
+
+#service h2{
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* 頁尾 */
