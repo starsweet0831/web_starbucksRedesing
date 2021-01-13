@@ -31,11 +31,72 @@ nav{
     color: #999;
     /* 文字會移動 */
     transition: 0.5s;
+    border: 0;
 }
 /* 轉場效果 */
 #link a:hover{
     color: #226641;
+    border: 5px #226641;
 }
+
+/* 最新消息 */
+#banner  div {
+    /* vh螢幕高度 */
+     height: 100vh; 
+}
+
+.banner1 {
+    background-image: url(./img/banner_1.jpg);
+    background-size: cover;
+}
+
+.banner2 {
+    background-image: url(./img/banner_2.jpg);
+    background-size: cover;
+}
+
+.banner3 {
+    background-image: url(./img/banner_3.jpg);
+    background-size: cover;
+}
+
+#banner{
+    text-align: center;
+    color: #fff;
+}
+
+#banner h1{
+    padding: 30px;
+    margin-top: 200px;
+    font-size: 120px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#banner hr{
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+    background: #fff;
+    border: none;
+}
+
+#banner p{
+    padding: 30px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#banner .slick-prev{
+    left: 50px;
+}
+
+#banner .slick-next{
+    right: 50px;
+}
+
+#banner .slick-dots{
+    bottom: 25px;
+}
+
 /* 商品介紹 */
 #products {
     width: 1280px;
@@ -45,6 +106,7 @@ nav{
 #products > div {
     display: grid;
     grid-template-columns:60% 40%;
+    margin-top: 20px;
 }
 
 #products .pic img{
@@ -54,7 +116,7 @@ nav{
 }
 
 #products .text{
-    padding:  150px 20px 0 0;
+    padding:  80px 30px 0 0;
 }
 
 #products .text h1{
@@ -64,6 +126,7 @@ nav{
 #products .text p{
     width: 300px;
     line-height: 3;
+    padding: 10px 0 20px;
 }
 /* 選取要變更的指令 odd基數 even.偶數 */
 #products > div:nth-child(2){
