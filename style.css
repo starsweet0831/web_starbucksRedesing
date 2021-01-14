@@ -92,10 +92,14 @@ nav{
 
 #banner .slick-prev{
     left: 50px;
+    z-index: 2;
+    transform: scale(1.5);
 }
 
 #banner .slick-next{
     right: 50px;
+    z-index: 2;
+    transform: scale(1.5);
 }
 
 #banner .slick-dots{
@@ -110,7 +114,7 @@ nav{
 
 #products > div {
     display: grid;
-    grid-template-columns:40% 60%;
+    grid-template-columns:60% 40%;
     margin-top: 20px;
 }
 
